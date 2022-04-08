@@ -171,15 +171,13 @@ img {
   height: 600px;
   margin-left: auto;
   margin-right: auto;
-
-  outline: 1px solid black;
+  
   background-image: linear-gradient(
       to right,
       rgba(47, 48, 58, 0.4),
       rgba(47, 48, 58, 0.4)
     ),
-    url("../images/Img_bg.jpg");
- 
+    url("../images/Img_bg.jpg"); 
 
   padding-top: 200px;
   padding-bottom: 200px;
