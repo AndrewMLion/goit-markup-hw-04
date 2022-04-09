@@ -138,10 +138,33 @@ img {
 .list.headercont {
   display: flex;
   margin-left: auto;
+
+  align-items: center;
+  
 }
 
 .headercont .item + .item {
   margin-left: 50px;
+}
+
+.icon-mail {
+  width: 16px;
+  height: 12px;
+
+  fill: var(--title-text-cilor);
+
+  margin-right: 10px;
+}
+
+.icon-mail:hover {
+  fill: var(--accent-color);
+}
+
+.icon-smartphone {
+  width: 10px;
+  height: 16px;
+
+  margin-right: 10px;
 }
 
 .headercont .link {
