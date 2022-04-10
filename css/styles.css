@@ -6,7 +6,7 @@
 /* фон шапки и подвала #2F303A */
 /* цвет контактов в footer rgba(255, 255, 255, 0.6); */
 /* вторичный цвет кнопки героя #188CE8 */
-
+/* цвет иконок соцсетей #AFB1B8 */
 :root {
   --background-color: #ffffff;
   --second-background-color: #f5f4fa;
@@ -16,6 +16,7 @@
   --accent-color: #2196f3;
   --text-contact-footer: rgba(255, 255, 255, 0.6);
   --secod-accent-color: #188ce8;
+  --icon-social: #AFB1B8;
 }
 
 body {
@@ -88,7 +89,8 @@ img {
 .list .link:hover,
 .list .link:focus {
   color: var(--accent-color);
-}
+  fill: currentColor;
+  }
 
 /* Border */
 .headblock {
@@ -127,8 +129,8 @@ img {
 
 .site-nav .link {
   display: block;
-  padding-top: 32px;
-  padding-bottom: 32px;
+  margin-top: 32px;
+  margin-bottom: 32px;
 }
 
 .site-nav .item + .item {
@@ -139,38 +141,20 @@ img {
   display: flex;
   margin-left: auto;
 
-  align-items: center;
-  
-}
+  align-items: center; 
+  }
 
 .headercont .item + .item {
   margin-left: 50px;
 }
 
-.icon-mail {
-  width: 16px;
-  height: 12px;
-
-  fill: var(--title-text-cilor);
-
-  margin-right: 10px;
-}
-
-.icon-mail:hover {
-  fill: var(--accent-color);
-}
-
-.icon-smartphone {
-  width: 10px;
-  height: 16px;
-
-  margin-right: 10px;
-}
-
 .headercont .link {
-  display: block;
-  padding-top: 32px;
-  padding-bottom: 32px;
+  display: inline-block;
+  justify-content: center;
+  align-items: center;
+
+  margin-top: 32px;
+  margin-bottom: 32px;
 
   color: var(--title-text-cilor);
   font-weight: 500;
@@ -178,6 +162,28 @@ img {
   line-height: 1.14;
   letter-spacing: 0.02em;
 }
+
+.mail {
+  display: flex;
+  }
+
+.icon-mail {
+  display: inline-flex;
+  vertical-align: auto;
+  fill: currentColor;
+
+  margin-right: 10px;
+}
+
+.icon-smartphone {
+  width: 10px;
+  height: 16px;
+
+  fill: currentColor;
+
+  margin-right: 10px;
+}
+
 
 /* Hero */
 .hero {
@@ -225,7 +231,6 @@ img {
   padding: 10px 32px;
 
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
-
 }
 
 .button-hero:hover,
@@ -246,6 +251,22 @@ img {
 .peculiarities .item + .item {
   margin-left: 30px;
 }
+
+.attention {
+  display: flex;
+  width: 270px;
+  height: 120px;
+  
+  background: var(--second-background-color);
+  border-radius: 4px;
+  justify-content: center;
+  align-items: center;
+
+  margin-bottom: 30px;
+
+  /* outline: 2px solid #000; */
+}
+
 
 .peculiarities .section-title {
   text-transform: uppercase;
@@ -347,6 +368,36 @@ flex-basis: calc(100% - 60px/3);
   font-size: 16px;
   line-height: 1.18;
   text-align: center;
+}
+
+.social {
+  display: block;
+  fill: var(--icon-social);
+
+justify-content: space-between;
+}
+
+.social .list {
+  display: flex;
+  margin: 16px 32px 0 32px;
+  justify-content: space-between;
+}
+
+.social .item {
+  display: flex;
+  width: 44px;
+  height: 44px;
+  justify-content: center;
+  align-items: center;
+
+  border-radius: 50%;
+
+   /* outline: 2px solid #000; */
+}
+
+.social .item:hover {
+  background-color: var(--accent-color);
+  fill: var(--background-color);
 }
 
 /* Footer */
