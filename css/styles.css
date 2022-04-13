@@ -588,7 +588,7 @@ svg {
   font-size: 18px;
   line-height: 2;
   letter-spacing: 0.06em;
-  /* margin-top: 20px; */
+
   margin-bottom: 4px;
 }
 
@@ -597,5 +597,4 @@ svg {
   font-weight: 400;
   font-size: 16px;
   line-height: 1.88;
-  /* padding-bottom: 20px; */
 }
