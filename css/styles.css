@@ -55,6 +55,11 @@ svg {
   margin-right: auto;
 }
 
+.section {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+
 .visually-hidden {
   position: absolute;
   width: 1px;
@@ -242,11 +247,6 @@ svg {
 }
 
 /* Peculiarities */
-.peculiarities {
-  padding-top: 94px;
-  padding-bottom: 94px;
-}
-
 .peculiarities .list {
   display: flex;
 }
@@ -273,7 +273,7 @@ svg {
 
 /* Doing */
 .doing {
-  padding-bottom: 94px;
+  padding-top: 0;
 }
 
 .doing-title {
@@ -297,9 +297,6 @@ svg {
 
 /* Team */
 .team {
-  padding-top: 94px;
-  padding-bottom: 94px;
-
   background-color: var(--second-background-color);
 }
 
@@ -486,11 +483,6 @@ svg {
 }
 
 /* PORTFOLIO */
-
-.project {
-  padding-bottom: 94px;
-  padding-top: 94px;
-}
 
 /* Filter */
 .list.btn {
