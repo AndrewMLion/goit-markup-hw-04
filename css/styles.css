@@ -571,6 +571,7 @@ svg {
   padding: 20px 24px;
 
   border: 1px solid var(--portfolio-cards-border);
+  border-top: none;
 }
 
 .project .section-title {
