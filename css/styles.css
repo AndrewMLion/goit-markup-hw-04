@@ -76,8 +76,7 @@ svg {
 .header {
   border-bottom: 1px solid #ececec;
 }
-
-.hero,
+.link.current .hero,
 .footer {
   background-color: var(--header-and-footer-color);
 }
@@ -253,6 +252,19 @@ svg {
 
 .pecul-item + .pecul-item {
   margin-left: 30px;
+}
+
+.attention {
+  display: flex;
+  width: 270px;
+  height: 120px;
+
+  background: var(--second-background-color);
+  border-radius: 4px;
+  justify-content: center;
+  align-items: center;
+
+  margin-bottom: 30px;
 }
 
 .pecul-title {
